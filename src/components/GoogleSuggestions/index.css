@@ -1,0 +1,26 @@
+.bg-container {
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.google-logo {
+  height: 65px;
+  width: 200px;
+}
+
+.search-bar {
+  border-radius: 5px;
+  width: 250px;
+  height: 25px;
+  margin-top: 10px;
+  box-shadow: 0px 4px 16px 0px #bfbfbf;
+  border-width: 0px;
+  padding-left: 10px;
+  padding-right: 10px;
+}
+
+.list-container {
+}
