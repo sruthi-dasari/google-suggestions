@@ -1,12 +1,25 @@
-import {Component} from 'react'
 import './index.css'
 
-class SuggestionItem extends Component {
-  render() {
-    const {suggestionDetail} = this.props
-    const {suggestion} = suggestionDetail
-    return <li className="suggestion-text list-group-item">{suggestion}</li>
+const SuggestionItem = props => {
+  const {suggestionDetail, updateSearchInput} = props
+  const {suggestion} = suggestionDetail
+
+  const onClickSuggestion = () => {
+    updateSearchInput(suggestion)
   }
+
+  return (
+    <li className="list-item">
+      <p className="suggestion-text">{suggestion}</p>
+      <button type="button" className="arrow-btn" onClick={onClickSuggestion}>
+        <img
+          src="https://assets.ccbp.in/frontend/react-js/diagonal-arrow-left-up.png"
+          alt="arrow"
+          className="arrow-icon"
+        />
+      </button>
+    </li>
+  )
 }
 
 export default SuggestionItem

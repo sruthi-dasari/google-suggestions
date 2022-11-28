@@ -1,7 +1,25 @@
+.list-item {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 16px;
+  list-style: none;
+}
+
 .suggestion-text {
   color: #475569;
   font-family: 'Roboto';
-  font-size: 11px;
-  list-style: none;
-  background-color: #ffffff;
+  font-size: 16px;
+  margin: 0;
+}
+
+.arrow-btn {
+  background-color: transparent;
+  border: none;
+  outline: none;
+  cursor: pointer;
+}
+
+.arrow-icon {
+  height: 20px;
+  width: 20px;
 }
